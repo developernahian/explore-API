@@ -27,8 +27,9 @@ function loadUsers(){
 function loadUsers2(){
     fetch('https://jsonplaceholder.typicode.com/users')
     .then(res => res.json())
-    .then(data => displayUsers(data))//ekhane displayUsers namer function call korechi. value pass korechi. and function call korar por displayUsers e data console.log korechi
+    .then(data => displayUsers(data))//ekhane displayUsers namer function call korechi. value pass korechi. and function call korar por displayUsers e data console.log korechi.. NOTE: parameter hisebe data nam er jaigai abc ba onno kono nam dewa jabe....
 }
+//ekhane data holo argument.. so data na likeh abc ba je kono nam dewa jabe
 function displayUsers(data){
     console.log(data)
 }
