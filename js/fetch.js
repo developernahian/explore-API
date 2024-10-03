@@ -3,7 +3,9 @@
 
 /*
 fetch("https://jsonplaceholder.typicode.com/todos/1")
-  .then((response) => response.json())// .json is not similar but close to JSON.parse
+  //.then(ijk => ijk.json())  
+  //OR
+  .then((response) => response.json())  // .json is not similar but close to JSON.parse
   //.then(abc => console.log(abc));
   //OR
   .then((json) => console.log(json));
@@ -18,7 +20,9 @@ fetch("https://jsonplaceholder.typicode.com/todos/1")
 /*
 
   const url = 'https://jsonplaceholder.typicode.com/todos/1' //1) Define a URL to fetch data from.
-  fetch(url)                                                 //2) Use the fetch function to send a request to the URL.
+  fetch(url)                         
+    //.then(ijk => ijk.json())  
+  //OR                        //2) Use the fetch function to send a request to the URL.
   .then(response => response.json())                         //3) Converts the data to JavaScript object.
   // .then(abc => console.log(abc))
   //OR
@@ -48,13 +52,18 @@ json convert
 
 
 
+//Load Data Button start ---------------------------------------------
 function loadData(){
     const url = 'https://jsonplaceholder.typicode.com/todos/1'
     fetch(url)
+        //.then(ressss => ressss.json())
+        //OR
         .then(response => response.json())
+        
         // .then(abc => console.log(abc))
         //OR
         // .then(data => console.log(data))
         //OR
         .then(json => console.log(json))
 }
+//Load Data Button end ---------------------------------------------
