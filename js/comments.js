@@ -39,3 +39,26 @@ const loadComments2= async() =>{
 
 }
 
+
+
+
+/*
+fetch:
+---------
+Purpose: It is a method to perform HTTP requests.
+Usage: Returns a Promise, which is then handled using .then() and .catch() for success and error scenarios.
+Best for: Simple use cases where you want to make one or two requests and don't mind working with .then() chains.
+
+
+
+async/await:
+-----------
+Purpose: It simplifies handling asynchronous code by allowing you to use Promises in a more readable, synchronous-like way.
+Usage: You can use await to "wait" for a Promise (like a fetch request) to resolve, avoiding .then() chains.
+Best for: When you're dealing with multiple asynchronous operations or want a cleaner and more readable code structure.
+
+
+
+
+So, while fetch isn't "worse," async/await is generally preferred for better code structure and easier maintenance in more complex projects.
+*/
