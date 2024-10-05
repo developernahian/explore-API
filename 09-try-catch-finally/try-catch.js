@@ -29,7 +29,7 @@ function checkAge(){
         errorTag.innerHTML = 'Something Wrong: ' + err
     }
     finally{
-        console.log('All done try catch')
+        console.log('All done try catch')//try ba catch jetai execute hok na keno finally excute hobei
     }
     console.log(11111)
 

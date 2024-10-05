@@ -1,3 +1,5 @@
+//IMPORTANT: B10 M35-5
+
 //Structure of steTimeout and setInterval
 //setTimeout(function,milliseconds) - executes a function once after a specified time
 //setInterval(function,milliseconds) - executes a function repeatedly with a specified interval
@@ -48,11 +50,14 @@ console.log(5)
 // } , 2000)
 
 
+
+//interval choltei thakbe jodi clearValue() diye break na kora hoy to....
+//intervalID ba interval ba id ba abc je kono nam er variable lekha jabe. intervalId ei nam most of the developer use kore
 let num = 0
 const intervalId = setInterval( () =>{
     num++
     if(num>5){
-        clearInterval(intervalId)
+        clearInterval(intervalId)//condition diye break kora hoyeche.
     }
     
     console.log(intervalId, 'I am You',  num)
